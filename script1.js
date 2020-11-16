@@ -54,8 +54,11 @@ function colorChange(event){
   let randomColor = 'rgb(' + colorValue() + ',' + colorValue() + ',' + colorValue() + ')';
   document.getElementById('p').style.color = randomColor;
   document.getElementById('p').style.fontSize = '100px';
+  document.getElementById('body').style.background = randomColor;
+  document.getElementById('buttonNext').style.background = randomColor;
  
 }
 document.getElementById('p').addEventListener('click', colorChange);
+document.getElementById('body').addEventListener('mouseover', colorChange);
 
-
+document.getElementById('buttonNext').addEventListener('click', colorChange);
